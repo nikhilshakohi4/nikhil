@@ -1,0 +1,251 @@
+body{
+    background-image: url("homewallpaper.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+     background-color: /* #566D7E #0077BE */#93B874 */;  
+    }
+
+.slideshowcontainer {
+  width: 18em;
+  height: 10em;
+  position: relative;
+  margin: auto;
+}
+ 
+/*.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} 
+.active {
+  background-color: #717171;
+}*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; 
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+nav a{
+	text-decoration: none;
+	margin-left: auto;
+	font-size: 2.5em;
+	padding: 0px 27px;
+  display: inline;
+}
+/*nav #backbutton {
+  font-size: 2.5em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+} */
+nav {
+	background-color: gainsboro;
+	text-align: center;
+	opacity: .5;
+	bottom: 0%;
+	position: fixed;
+	width: 100%;
+	margin: 0 0 0 -5px;
+}
+ 
+ul #notifname {
+  color: black;
+  position: absolute;
+  top: 0%;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+ul #notificons{
+	background-color: gainsboro;
+	opacity: .5;
+	top: 0%;
+	position: fixed;
+	width: 100%;
+	margin: 0 0 0 -50px;
+	text-align: right;
+  display: inline;
+}
+
+li {
+  display: inline;
+  padding-right: 10px;
+  margin-right: .25em;
+}
+#batttery {
+	font-size: 48px;
+}
+#icons{
+    text-align: center;
+    height: 5.5em;
+    position: relative;
+    padding-top: 25px;
+}
+#icons a{
+  font-size: 55px;
+  padding: 20px; 
+  text-decoration: none;
+  color: green;
+  transition: width 1s, height 1s, transform .3s;
+
+}
+#iconname {
+  font-size: .3em;
+  color: white;
+  font-family: Arial;
+}
+#icons a:hover {
+      font-size: 55px;
+    transform: rotate(360deg);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: rgba(0,0,0,0.4); 
+    margin: auto;
+    padding: 0;
+    border: 1px dashed blue; 
+    width: 100%;
+    height: 85%;
+   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);  */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+#modalclose {
+    color: blue;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#modalclose:hover,
+#modalclose:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+/*    background-color: #5cb85c;  */
+    color: white;
+}
+.modal-header h2 {
+	text-align: center;
+}
+.modal-header #day {
+	font-family: "Georgia";
+}
+
+.modal-body {
+	padding: 2px 16px;
+	color: white;
+}
+
+.modal-body #settings,
+#about {
+	text-decoration: none;
+  font-size: 1.2em;
+	font-weight: bolder;
+  color: green;
+}
+.modal-body #settings:hover,
+#about:hover {
+  color: violet;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.button {
+  border-radius: 4px;
+  background-color: #00bfff;
+  background-color: rgba(0,0,0,0.25);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 7px;
+  width: 150px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\21e9";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.container {
+  margin: left;
+  width: 1200px;
+}
+/*icons*/
